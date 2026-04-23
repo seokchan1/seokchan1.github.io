@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>강석찬 - Game Developer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        min-height: 100vh;
+        color: #fff;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 50px 20px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        background: linear-gradient(90deg, #00d9ff, #a855f7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .subtitle {
+        font-size: 1.5rem;
+        color: #a0a0a0;
+        margin-bottom: 20px;
+      }
+
+      .tagline {
+        font-size: 1.2rem;
+        color: #00d9ff;
+        padding: 10px 25px;
+        border: 2px solid #00d9ff;
+        border-radius: 30px;
+        display: inline-block;
+      }
+
+      section {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 30px;
+        backdrop-filter: blur(10px);
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #00d9ff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+
+      .about-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 1.1rem;
+      }
+
+      .about-item span:first-child {
+        font-size: 1.5rem;
+      }
+
+      .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .tech-category {
+        flex: 1;
+        min-width: 250px;
+      }
+
+      .tech-category h3 {
+        font-size: 1.1rem;
+        color: #a855f7;
+        margin-bottom: 15px;
+      }
+
+      .tech-item {
+        display: inline-block;
+        background: rgba(0, 217, 255, 0.1);
+        border: 1px solid #00d9ff;
+        padding: 8px 16px;
+        border-radius: 20px;
+        margin: 5px;
+        font-size: 0.95rem;
+      }
+
+      .contact-links {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .contact-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+      }
+
+      .github-btn {
+        background: #333;
+        color: #fff;
+        border: 2px solid #fff;
+      }
+
+      .github-btn:hover {
+        background: #fff;
+        color: #333;
+      }
+
+      .email-btn {
+        background: linear-gradient(90deg, #00d9ff, #a855f7);
+        color: #fff;
+        border: 2px solid transparent;
+      }
+
+      .email-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
+      }
+
+      footer {
+        text-align: center;
+        padding: 30px;
+        color: #666;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+        }
+        .subtitle {
+          font-size: 1.1rem;
+        }
+        section {
+          padding: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🎮 강석찬</h1>
+        <p class="subtitle">Game Developer Portfolio</p>
+        <span class="tagline">🎯 목표: 게임 개발자 (Client / Unity)</span>
+      </header>
+
+      <section>
+        <h2>👾 About Me</h2>
+        <div class="about-grid">
+          <div class="about-item">
+            <span>💻</span>
+            <span>사용 언어: C, C#</span>
+          </div>
+          <div class="about-item">
+            <span>🛠</span>
+            <span>엔진: Unity</span>
+          </div>
+          <div class="about-item">
+            <span>📍</span>
+            <span>Location: Korea</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>⚔ Tech Stack</h2>
+        <div class="tech-stack">
+          <div class="tech-category">
+            <h3>🎮 Game Development</h3>
+            <span class="tech-item">Unity</span>
+            <span class="tech-item">C#</span>
+          </div>
+          <div class="tech-category">
+            <h3>💻 Programming</h3>
+            <span class="tech-item">C</span>
+            <span class="tech-item">Visual Studio</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>📫 Contact</h2>
+        <div class="contact-links">
+          <a
+            href="https://github.com/seokchan1"
+            target="_blank"
+            class="contact-btn github-btn"
+          >
+            <span>🐙</span> GitHub
+          </a>
+          <a href="mailto:kangchan5508@email.com" class="contact-btn email-btn">
+            <span>📧</span> Email
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2026 강석찬. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
